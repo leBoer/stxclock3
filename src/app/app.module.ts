@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SortPipe } from './sort.pipe';
 import { AppRoutingModule } from "./app-routing.module";
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     NavbarComponent,
     DashboardComponent,
     SortPipe,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     AppRoutingModule,
