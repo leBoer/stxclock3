@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { MomentModule } from "angular2-moment";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { LoadingAnimateModule, LoadingAnimateService } from 'ng2-loading-animate';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -34,11 +33,10 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    LoadingAnimateModule.forRoot(),
     NgbModule.forRoot(),
     MomentModule
   ],
-  providers: [ExchangeService, ClockService, LoadingAnimateService],
+  providers: [ExchangeService, ClockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
