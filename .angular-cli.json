@@ -10,7 +10,8 @@
       "assets": [
         "assets",
         "favicon.png",
-        "_redirects"
+        "_redirects",
+        "google217663f5bd585a9d.html"
       ],
       "index": "index.html",
       "main": "main.ts",
