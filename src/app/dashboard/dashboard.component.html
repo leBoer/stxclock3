@@ -1,4 +1,3 @@
-<loading-animate></loading-animate>
 <div *ngIf="exchanges && exchanges.length">
 <div class="row test-row">
   <div class="col-12 col-md-4 full-width" *ngFor="let exchange of exchanges | sortBy : 'name'" [ngClass]="{'module-open': exchange.open_status, 'module-closed': !exchange.open_status}">
