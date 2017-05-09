@@ -1,3 +1,4 @@
+import { OnInit } from "@angular/core";
 import { Component } from '@angular/core';
 import { Observable } from "rxjs/Rx";
 
@@ -7,6 +8,11 @@ import { Observable } from "rxjs/Rx";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'STXClock';
+
+  ngOnInit(): void {
+    window.prerenderReady = true;
+  }
+  
 }
